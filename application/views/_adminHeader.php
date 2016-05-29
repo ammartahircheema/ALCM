@@ -44,6 +44,9 @@
                                     <a href="<?php echo base_url() . 'Admin/Index' ?>" >Home</a>
                                 </li>
                                 <li class="dropdown">
+                                    <a href="<?php echo base_url() . 'Admin/Notification/ ' ?>" >Notification</a>
+                                </li>
+                                <li class="dropdown">
                                     <a href="<?php echo base_url() . 'Admin/logout' ?>">Logout</a>
                                 </li>
                             </ul>

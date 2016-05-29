@@ -8,6 +8,7 @@ class User extends CI_Controller {
         parent::__construct();
         $this->load->model("UserModel");
         $this->load->model("ChatModel");
+        $this->load->model("NotificationModel");
     }
 
     public function xlogin($msg) {
@@ -71,7 +72,15 @@ class User extends CI_Controller {
 
     public function Index() {
         $this->validate();
-        $this->load->view('UserHome');
+        $user = $this->UserModel->getUserByEmail($this->session->userdata('email'));
+        foreach ($user as $value) {
+            $batch = $value->batch;
+            $department = $value->department;
+            $id = $value->id;
+        }
+        $results = $this->NotificationModel->getNotification($department, $batch);
+        $data = array('results' => $results);
+        $this->load->view("UserHome", $data);
     }
 
     public function UpdateProfile() {
