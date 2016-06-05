@@ -39,6 +39,24 @@
         </div>
             </form>
     </section>
+        <ul id="messages"></ul>
+        <form action="">
+            <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <!--<script src="node_modules/socket.io/node_modules/socket.io-client/socket.io.js" type="text/javascript"></script>-->
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script>
+            var socket = io();
+            $('form').submit(function () {
+                socket.emit('chat message', {id: 1, name: 'mubeen', msg: $('#m').val()});
+                $('#m').val('');
+                return false;
+            });
+            socket.on('chat message', function (msg) {
+                $('#messages').append($('<li>').text(msg.msg));
+            });
+        </script>
 
 </article>
 <!-- /.container -->

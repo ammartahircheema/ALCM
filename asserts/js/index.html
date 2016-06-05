@@ -28,6 +28,27 @@
                 $('#m').val('');
                 return false;
             });
+            socket.on('chat message', function (msg) {
+                $('#messages').append($('<li>').text(msg.msg));
+            });
+            $.ready(function(){
+                $.ajax({
+    type: 'POST',
+    url: url,
+    headers: {
+        "My-First-Header":"first value",
+        "My-Second-Header":"second value"
+    }
+    //OR
+    //beforeSend: function(xhr) { 
+    //  xhr.setRequestHeader("My-First-Header", "first value"); 
+    //  xhr.setRequestHeader("My-Second-Header", "second value"); 
+    //}
+}).done(function(data) { 
+    alert(data);
+});
+            })
+            
         </script>
     </body>
 </html>

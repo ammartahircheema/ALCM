@@ -31,13 +31,21 @@ class User extends CI_Controller {
     }
 
     public function Chat() {
+//        var_dump($this->session->userdata('email')); exit();
+//        var_dump($_COOKIE['ci_session']);exit();
         $user = $this->UserModel->getUserByEmail($this->session->userdata('email'));
+//        var_dump($user);
+//        die();
         foreach ($user as $value) {
             $department = $value->department;
         }
         $this->session->set_userdata('department', $department);
+//        var_dump($department);exit();
         $results = $this->ChatModel->getChatByDept($department);
-        $data = array('result' => $results);
+        $data = array('result' => $results, 'dept' => $department);
+//        var_dump($data); exit();
+//        json_encode($data);
+//        die();
         $this->load->view('UserChat', $data);
     }
 
