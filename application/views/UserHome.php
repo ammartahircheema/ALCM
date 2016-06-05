@@ -12,7 +12,7 @@
         </div>
         <?php
             echo '<div class="col-md-4" >';
-            echo '<marquee direction="up">';
+            echo '<marquee direction="up" style="border: #F9E0E4 1px solid;border-radius: 8px;">';
             foreach ($results as $row) {
                 echo '<h5>' . $row->title . ' <small>' . $row->msg . '</small></h5><br>';
             }
