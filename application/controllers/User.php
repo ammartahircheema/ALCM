@@ -9,6 +9,7 @@ class User extends CI_Controller {
         $this->load->model("UserModel");
         $this->load->model("ChatModel");
         $this->load->model("NotificationModel");
+        $this->load->helper('cookie');
     }
 
     public function xlogin($msg) {
@@ -67,6 +68,7 @@ class User extends CI_Controller {
 
     public function Logout() {
         $this->session->sess_destroy();
+        delete_cookie("email");
         $this->load->view('home');
     }
 
@@ -83,6 +85,17 @@ class User extends CI_Controller {
         $this->load->view("UserHome", $data);
     }
 
+    public function UserPhoto() {
+        $this->validate();
+        if ($this->session->userdata('email') != NULL || $this->session->userdata('email') != "") {
+            $results = $this->UserModel->getUserByEmail($this->session->userdata('email'));
+            //$results=$this->session->userdata('email');
+            $data = array('result' => $results);
+            $this->load->view('UserPhoto', $data);
+        } else
+            redirect(base_url() . 'Home/Index');
+        //getUserByEmail
+    }
     public function UpdateProfile() {
         $this->validate();
         if ($this->session->userdata('email') != NULL || $this->session->userdata('email') != "") {
@@ -119,6 +132,12 @@ class User extends CI_Controller {
                     $isAdmin = 1;
                 }
                 $this->session->set_userdata('isAdmin', $isAdmin);
+  $cookie= array(
+      'name'   => 'email',
+      'value'  => $email,
+       'expire' => '86500',
+  );
+  $this->input->set_cookie($cookie);
                 echo "<div class='alert alert-success'><strong>Login Successful, Redirecting...</strong></div>" .
                 "<script type='text/javascript'>
 				window.setTimeout(function(){
