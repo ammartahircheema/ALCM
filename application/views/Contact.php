@@ -14,7 +14,7 @@
 
     <!-- CONTAINER -->
     <article class="container inforow">
-        <div class="col-sm-4 col-sm-offset-1">
+        <div class="col-sm-7 col-sm-offset-3">
             <h3>We always love to hear a shout from user side </h3>
             <address>
                 <p>Tel: (041) 922-0355<br>Tel: (041) 922-0356<br>Tel: (041) 922-0357<br>
@@ -23,7 +23,7 @@
                 <p>Jaranwala Road, Faisalabad</p>
             </address>
         </div>
-        <div class="col-sm-6 col-sm-offset-1">
+<!--        <div class="col-sm-6 col-sm-offset-1">
             <h3>contact form —</h3>
             <form id="send-form" method="post" action="#">
                 <div class="form-group">
@@ -38,7 +38,7 @@
                 <input class="btn btn-default" type="submit" value="Send">
                 <span class="succs-msg">message was sent</span>
             </form>
-        </div>
+        </div>-->
     </article>
     <!-- /.container -->
 </div>
