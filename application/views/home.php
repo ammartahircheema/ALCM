@@ -8,13 +8,13 @@
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="N"></div>
             <h1>NFC IEFR Alumi Linkage and Chat Module</h1>
-            <a href="#" class="btn btn-default">About Us</a>
+            <a href="<?php echo base_url() . 'Home/About' ?>" class="btn btn-default">About Us</a>
         </div>
     </header>
     <!-- /.page-header -->
 
     <!-- SLIDER -->
-    <article class="ribbon slider">
+<!--    <article class="ribbon slider">
         <div class="container">
             <div class="col-xs-12 text-right">
                 <h4 class="text-muted">latest projects —</h4>
@@ -36,18 +36,18 @@
                 <nav class="nav-pages"></nav>
             </div>
         </div>
-    </article>
+    </article>-->
     <!-- /.slider -->
 
     <!-- CONTAINER -->
-    <article class="container m-center">
+<!--    <article class="container m-center">
         <div class="col-sm-4 col-sm-offset-1">
             <h3>About Company —</h3>
         </div>
         <div class="col-sm-6">
             <p>Ea nec enim accumsan, ut prima blandit mel, labores nonumes detraxit an sed. Omnis malis propriae an sed, eu mea erat utinam meliore, inciderint philosophia usu ne. Laudem labores eu sed, vix in omnis habemus omnesque.</p>
         </div>
-    </article>
+    </article>-->
     <!-- /.container -->
 
 </div>

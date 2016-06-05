@@ -24,7 +24,7 @@
     <!-- /.container -->
 
     <!-- SLIDER -->
-    <article class="slider msnr-container oneslider">
+<!--    <article class="slider msnr-container oneslider">
         <div class="container">
             <div class="col-xs-6">
                 <h4 class="count">1/3</h4>
@@ -38,49 +38,49 @@
                 <ul>
                     <li class="masonry-wrap">
                         <div class="msnr">
-                            <a href="../asserts/images/interior/interior-1-popup.jpg" class="magnific" title="Our office"><img src="../asserts/images/interior/interior-1.jpg" alt=""></a>
+                            <a href="<?php echo base_url() ?>asserts/images/interior/interior-1-popup.jpg" class="magnific" title="Our office"><img src="<?php echo base_url() ?>asserts/images/interior/interior-1.jpg" alt=""></a>
                         </div>
                         <div class="msnr">
-                            <a href="../asserts/images/interior/interior-2-popup.jpg" class="magnific" title="Household"><img src="../asserts/images/interior/interior-2.jpg" alt=""></a>
+                            <a href="<?php echo base_url() ?>asserts/images/interior/interior-2-popup.jpg" class="magnific" title="Household"><img src="<?php echo base_url() ?>asserts/images/interior/interior-2.jpg" alt=""></a>
                         </div>
                         <div class="msnr">
-                            <a href="../asserts/images/interior/interior-3-popup.jpg" class="magnific" title="Kitchen"><img src="../asserts/images/interior/interior-3.jpg" alt=""></a>
+                            <a href="<?php echo base_url() ?>asserts/images/interior/interior-3-popup.jpg" class="magnific" title="Kitchen"><img src="<?php echo base_url() ?>asserts/images/interior/interior-3.jpg" alt=""></a>
                         </div>
                         <div class="msnr">
-                            <a href="../asserts/images/interior/interior-5-popup.jpg" class="magnific" title="Balcony"><img src="../asserts/images/interior/interior-5.jpg" alt=""></a>
+                            <a href="<?php echo base_url() ?>asserts/images/interior/interior-5-popup.jpg" class="magnific" title="Balcony"><img src="<?php echo base_url() ?>asserts/images/interior/interior-5.jpg" alt=""></a>
                         </div>
                         <div class="msnr">
-                            <a href="../asserts/images/interior/interior-4-popup.jpg" class="magnific" title="Blue Sofa"><img src="../asserts/images/interior/interior-4.jpg" alt=""></a>
+                            <a href="<?php echo base_url() ?>asserts/images/interior/interior-4-popup.jpg" class="magnific" title="Blue Sofa"><img src="<?php echo base_url() ?>asserts/images/interior/interior-4.jpg" alt=""></a>
                         </div>
                     </li>
                 </ul>
                 <li class="masonry-wrap">
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-6-popup.jpg" class="magnific" title="Lares and Penates"><img src="../asserts/interior/interior-6.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-6-popup.jpg" class="magnific" title="Lares and Penates"><img src="<?php echo base_url() ?>asserts/interior/interior-6.jpg" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-7-popup.jpg" class="magnific" title="Apple Note"><img src="../asserts/interior/interior-7.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-7-popup.jpg" class="magnific" title="Apple Note"><img src="<?php echo base_url() ?>asserts/interior/interior-7.jpg" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-8-popup.jpg" class="magnific" title="A Long Table"><img src="../asserts/interior/interior-8.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-8-popup.jpg" class="magnific" title="A Long Table"><img src="<?php echo base_url() ?>asserts/interior/interior-8.jpg" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <img src="../asserts/interior/interior-9.jpg"  alt="">
-                        <a href="https://vimeo.com/45830194" class="mask magnific-video" title="Canteen"><img src="../asserts/ico-btn-video.png" alt=""></a>
+                        <img src="<?php echo base_url() ?>asserts/interior/interior-9.jpg"  alt="">
+                        <a href="https://vimeo.com/45830194" class="mask magnific-video" title="Canteen"><img src="<?php echo base_url() ?>asserts/ico-btn-video.png" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-10-popup.jpg" class="magnific" title="Dayroom"><img src="../asserts/interior/interior-10.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-10-popup.jpg" class="magnific" title="Dayroom"><img src="<?php echo base_url() ?>asserts/interior/interior-10.jpg" alt=""></a>
                     </div>
                 </li>
                 <li class="masonry-wrap">
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-11-popup.jpg" class="magnific" title="Hall Of Negotiations"><img src="../asserts/interior/interior-11.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-11-popup.jpg" class="magnific" title="Hall Of Negotiations"><img src="<?php echo base_url() ?>asserts/interior/interior-11.jpg" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-12-popup.jpg" class="magnific" title="Some Strange Title"><img src="../asserts/interior/interior-12.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-12-popup.jpg" class="magnific" title="Some Strange Title"><img src="<?php echo base_url() ?>asserts/interior/interior-12.jpg" alt=""></a>
                     </div>
                     <div class="msnr">
-                        <a href="../asserts/interior/interior-13-popup.jpg" class="magnific" title="Library"><img src="../asserts/interior/interior-13.jpg" alt=""></a>
+                        <a href="<?php echo base_url() ?>asserts/interior/interior-13-popup.jpg" class="magnific" title="Library"><img src="<?php echo base_url() ?>asserts/interior/interior-13.jpg" alt=""></a>
                     </div>
                 </li>
                 <div class="slidebar">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </article>
+    </article>-->
     <!-- /.slider -->
 
     <!-- CONTAINER -->
