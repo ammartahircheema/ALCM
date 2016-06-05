@@ -47,6 +47,9 @@
                     echo '<div class="form-group">';
                     echo '<input class="form-control" type="password" placeholder="password" id="password" name="password" required value="' . $row->password . '">';
                     echo '</div>';
+                    echo '<div class="form-group">';
+                    echo '<a href="'.base_url().'User/UserPhoto/'.$row->id.'">Update Photo </a>';
+                    echo '</div>';
                 }
                 ?>
                 <input class="btn btn-default" type="submit" value="Save Changes">
