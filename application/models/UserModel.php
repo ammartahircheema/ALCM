@@ -56,6 +56,11 @@ class UserModel extends CI_Model {
         $query = $this->db->get($this->table_name);
         return $query->result();
     }
+    public function getUserById($id) {
+        $this->db->where("id", $id);
+        $query = $this->db->get($this->table_name);
+        return $query->result();
+    }
 
     // Function Check Existing Email
     public function isEmailExists($email) {
