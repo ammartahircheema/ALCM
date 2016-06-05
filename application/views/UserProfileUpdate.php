@@ -24,6 +24,10 @@
                     ?></div>
                 <?php
                 foreach ($result as $row) {
+                    echo '<img src="../uploads/' . $row->photo . '" name="preview" width="100px" height="auto" id="preview" alt="image not loaded yet">';
+                    echo '<div class="form-group">';
+                    echo '<a href="'.base_url().'User/UserPhoto/">Update Photo </a>';
+                    echo '</div>';
                     echo '<div class="form-group">';
                     echo '<input class="form-control" type="text" placeholder="name" id="name" name="name" required value="' . $row->name . '">';
                     echo '</div>';
@@ -46,9 +50,6 @@
                     echo '</div>';
                     echo '<div class="form-group">';
                     echo '<input class="form-control" type="password" placeholder="password" id="password" name="password" required value="' . $row->password . '">';
-                    echo '</div>';
-                    echo '<div class="form-group">';
-                    echo '<a href="'.base_url().'User/UserPhoto/'.$row->id.'">Update Photo </a>';
                     echo '</div>';
                 }
                 ?>

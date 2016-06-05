@@ -16,20 +16,18 @@
     <article class="container text-center">
 
         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-            <form action="<?php echo base_url() . 'User/ProcessUpdate' ?>" method="post">
+            <form action="<?php echo base_url() . 'User/xUserPhoto' ?>" method="post" enctype="multipart/form-data">
                 <div style="color: red"><?php
                     if (isset($msg)) {
                         echo str_replace("%20", " ", $msg);
                     }
                     ?></div>
                 <?php
-                foreach ($result as $row) {
                     echo '<div class="form-group">';
-                    echo '<input class="form-control" type="file" id="photo" name="photo" required ">';
+                    echo '<input class="form-control" type="file" id="fileToUpload" name="fileToUpload" required accept=",.jpg,.jpeg,.png">';
                     echo '</div>';
-                }
                 ?>
-                <input class="btn btn-default" type="submit" value="Save Changes">
+                <input class="btn btn-default" type="submit" value="Upload Photo">
             </form>
         </div>
     </article>

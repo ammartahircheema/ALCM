@@ -43,6 +43,14 @@ class UserModel extends CI_Model {
         $this->db->update($this->table_name, $data);
         return true;
     }
+    function updateUserPhoto($email, $photo) {
+        $data = array(
+            "photo" => $photo
+        );
+        $this->db->where("email", $email);
+        $this->db->update($this->table_name, $data);
+        return true;
+    }
 
     // Get Users Functions
     public function getUsers() {
